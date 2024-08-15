@@ -38,15 +38,14 @@ tl.from(".page .last", {
     opacity: 0,
     scale: 0.5,
     duration: 0.5,
-    delay: 1.5,
+    delay: 1.3,
     y: 50,
-    ease: "power2.out",
     stagger: 0.2 // Stagger the animations of child elements
 })
 .to(".page .last", {
     scale: 1.1, // Bounce effect
     duration: 0.5,
-    ease: "bounce.out",
+    ease: "power5",
     yoyo: true,
     repeat: 1
 });
