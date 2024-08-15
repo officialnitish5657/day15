@@ -40,15 +40,10 @@ tl.from(".page .last", {
     duration: 0.5,
     delay: 1.3,
     y: 50,
-    stagger: 0.2 // Stagger the animations of child elements
+    stagger: 0.2,
+    ease:"power5"
 })
-.to(".page .last", {
-    scale: 1.1, // Bounce effect
-    duration: 0.5,
-    ease: "power5",
-    yoyo: true,
-    repeat: 1
-});
+
 
 gsap.to(".container", {
     textShadow: "0px 0px 20px rgba(255, 255, 255, 0.8)",
